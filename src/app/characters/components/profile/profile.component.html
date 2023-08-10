@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{ character.name }}</mat-card-title>
+        <mat-card-subtitle>actualizacion: {{character.modified | date:'dd/MM/yyyy'}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content class="mt-2">
+        <br>
+        <span *ngIf="character.description; else default">{{character.description }}</span>
+        <ng-template #default>(Sin Descripcion)</ng-template>        
+        
+    </mat-card-content>
+</mat-card>

@@ -9,6 +9,7 @@ import { LayoutComponent } from './pages/layout/layout.component';
 import { ListComponent } from './pages/list/list.component';
 import { MaterialModule } from '../material/material.module';
 import { AuditComponent } from './pages/audit/audit.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AuditComponent } from './pages/audit/audit.component';
     SearchCharacterComponent,
     LayoutComponent,
     ListComponent,
-    AuditComponent
+    AuditComponent,
+    ProfileComponent
   ],
   imports: [
     CommonModule,
