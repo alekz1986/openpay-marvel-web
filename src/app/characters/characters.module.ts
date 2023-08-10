@@ -6,6 +6,9 @@ import { CharacterComponent } from './pages/character/character.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { SearchCharacterComponent } from './pages/search-character/search-character.component';
 import { LayoutComponent } from './pages/layout/layout.component';
+import { ListComponent } from './pages/list/list.component';
+import { MaterialModule } from '../material/material.module';
+import { AuditComponent } from './pages/audit/audit.component';
 
 
 @NgModule({
@@ -13,11 +16,14 @@ import { LayoutComponent } from './pages/layout/layout.component';
     CharacterComponent,
     CharactersComponent,
     SearchCharacterComponent,
-    LayoutComponent
+    LayoutComponent,
+    ListComponent,
+    AuditComponent
   ],
   imports: [
     CommonModule,
-    CharactersRoutingModule
+    CharactersRoutingModule,
+    MaterialModule
   ]
 })
 export class CharactersModule { }
